@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prekeme Paul — Data Analytics Engineer</title>
   <meta name="description" content="Prekeme “Pre-Gee” Paul, Data Analytics Engineer in Lagos with a background in FP&A and financial reporting. Case studies in data pipelines, data quality, BI and finance.">
+  <meta name="theme-color" content="#08120e">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,36 +38,36 @@
           <p class="kicker">Data Analytics Engineer, Lagos</p>
           <h1 id="hero-title">I reconcile before I report.</h1>
           <p class="lede">A decade in finance taught me that a number is only useful once it agrees with its source. Now I build the data pipelines, quality checks and Power BI reports that make that true for financial services.</p>
-          <p class="stack">PySpark, SQL, Microsoft Fabric, Databricks, Power BI</p>
+          <ul class="badges">
+            <li>Insurance and financial services</li>
+            <li>FP&amp;A background</li>
+          </ul>
           <div class="actions">
             <a class="btn btn-primary" href="#work">See case studies</a>
             <a class="btn btn-secondary" href="https://github.com/PreksG">View GitHub</a>
           </div>
-          <dl class="stats">
-            <div><dt>Years in finance and data</dt><dd>12</dd></div>
-            <div><dt>Published case studies</dt><dd>5</dd></div>
-            <div><dt>Cloud platforms in production</dt><dd>2</dd></div>
-          </dl>
         </div>
 
-        <div class="hero-visual">
-          <div class="portrait">
-            <img class="avatar" src="https://github.com/PreksG.png?size=360" alt="Portrait of Prekeme Paul" width="180" height="180" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'avatar avatar-fallback',textContent:'PP'}))">
-          </div>
-          <figure class="ledger" aria-labelledby="ledger-caption">
-            <figcaption id="ledger-caption" class="ledger-title">Before any figure goes out</figcaption>
-            <table class="ledger-table">
-              <thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead>
-              <tbody>
-                <tr><td>Record counts</td><td><span class="tick" aria-hidden="true"></span>Match source</td></tr>
-                <tr><td>Premium totals</td><td><span class="tick" aria-hidden="true"></span>Match finance</td></tr>
-                <tr><td>Duplicates</td><td><span class="tick" aria-hidden="true"></span>Removed</td></tr>
-                <tr><td>Joins</td><td><span class="tick" aria-hidden="true"></span>One row per client</td></tr>
-                <tr><td>Latest load</td><td><span class="tick" aria-hidden="true"></span>Fresh</td></tr>
-              </tbody>
-            </table>
-          </figure>
+        <div class="orbit" aria-hidden="true">
+          <span class="ring ring-outer"></span>
+          <span class="ring ring-inner"></span>
+          <img class="portrait" src="assets/headshot.jpg" alt="" width="280" height="280">
+          <span class="chip" style="--a:-100deg">PySpark</span>
+          <span class="chip" style="--a:-40deg">Microsoft Fabric</span>
+          <span class="chip" style="--a:15deg">SQL</span>
+          <span class="chip" style="--a:75deg">Power BI</span>
+          <span class="chip" style="--a:140deg">Databricks</span>
+          <span class="chip" style="--a:200deg">Excel</span>
         </div>
+        <img class="portrait-mobile" src="assets/headshot.jpg" alt="Portrait of Prekeme Paul" width="160" height="160">
+      </div>
+
+      <div class="wrap">
+        <dl class="stats">
+          <div><dd>12</dd><dt>Years in finance and data</dt></div>
+          <div><dd>5</dd><dt>Published case studies</dt></div>
+          <div><dd>2</dd><dt>Cloud platforms in production</dt></div>
+        </dl>
       </div>
     </section>
 
@@ -89,7 +90,7 @@
 
         <div class="cards">
           <article class="card" data-tags="engineering">
-            <div class="cover cover-pipeline" aria-hidden="true">
+            <div class="cover" aria-hidden="true">
               <svg viewBox="0 0 400 200"><g class="c-box"><rect x="22" y="78" width="70" height="44" rx="6"/><rect x="118" y="78" width="70" height="44" rx="6"/><rect x="214" y="78" width="70" height="44" rx="6"/><rect x="310" y="78" width="70" height="44" rx="6"/></g><g class="c-line"><path d="M92 100h26M188 100h26M284 100h26"/></g><g class="c-label"><text x="57" y="104">Raw</text><text x="153" y="104">Rules</text><text x="249" y="104">Gold</text><text x="345" y="104">Check</text></g><circle class="c-ok" cx="372" cy="80" r="11"/><path class="c-okmark" d="M366 80l4 4 8-8"/></svg>
             </div>
             <div class="card-body">
@@ -117,7 +118,7 @@
           </article>
 
           <article class="card" data-tags="fpna">
-            <div class="cover cover-budget" aria-hidden="true">
+            <div class="cover" aria-hidden="true">
               <svg viewBox="0 0 400 200"><path class="c-axis" d="M36 170h336"/><g class="c-bar"><rect x="56" y="80" width="22" height="90"/><rect x="128" y="60" width="22" height="110"/><rect x="200" y="96" width="22" height="74"/><rect x="272" y="50" width="22" height="120"/></g><g class="c-bar2"><rect x="82" y="92" width="22" height="78"/><rect x="154" y="66" width="22" height="104"/><rect x="226" y="84" width="22" height="86"/><rect x="298" y="70" width="22" height="100"/></g><g class="c-label c-left"><text x="56" y="34">Budget</text><text x="140" y="34">Actual</text></g><rect class="c-bar" x="40" y="24" width="10" height="10"/><rect class="c-bar2" x="124" y="24" width="10" height="10"/></svg>
             </div>
             <div class="card-body">
@@ -131,7 +132,7 @@
           </article>
 
           <article class="card" data-tags="ai bi">
-            <div class="cover cover-brief" aria-hidden="true">
+            <div class="cover" aria-hidden="true">
               <svg viewBox="0 0 400 200"><g class="c-box"><rect x="26" y="30" width="62" height="36" rx="5"/><rect x="26" y="82" width="62" height="36" rx="5"/><rect x="26" y="134" width="62" height="36" rx="5"/></g><g class="c-line"><path d="M88 48c40 0 40 52 80 52M88 100h80M88 152c40 0 40-52 80-52"/></g><path class="c-gate" d="M190 76l24 24-24 24-24-24z"/><path class="c-line" d="M214 100h34"/><rect class="c-doc" x="248" y="38" width="120" height="124" rx="6"/><g class="c-rule"><path d="M264 62h88M264 82h70M264 102h88M264 122h56M264 142h76"/></g></svg>
             </div>
             <div class="card-body">
@@ -145,7 +146,7 @@
           </article>
 
           <article class="card" data-tags="bi">
-            <div class="cover cover-rca" aria-hidden="true">
+            <div class="cover" aria-hidden="true">
               <svg viewBox="0 0 400 200"><path class="c-axis" d="M36 170h336"/><path class="c-trend" d="M40 140l50-18 50 10 50-34 50 6 50-26 50-12"/><path class="c-spike" d="M240 104l20-74 20 62"/><circle class="c-lens" cx="262" cy="56" r="34"/><path class="c-lens-h" d="M286 80l30 30"/></svg>
             </div>
             <div class="card-body">
@@ -162,11 +163,26 @@
     </section>
 
     <!-- How I work -->
-    <section class="section night" id="process" aria-labelledby="process-title">
+    <section class="section alt" id="process" aria-labelledby="process-title">
       <div class="wrap">
-        <div class="section-head">
-          <h2 id="process-title">How I work</h2>
-          <p>The same six steps on every project, from the first conversation to production.</p>
+        <div class="process-head">
+          <div>
+            <h2 id="process-title">How I work</h2>
+            <p>The same six steps on every project, from the first conversation to production. Nothing reaches a report until it passes the checks on the right.</p>
+          </div>
+          <figure class="ledger" aria-labelledby="ledger-caption">
+            <figcaption id="ledger-caption" class="ledger-title">Before any figure goes out</figcaption>
+            <table class="ledger-table">
+              <thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead>
+              <tbody>
+                <tr><td>Record counts</td><td><span class="tick" aria-hidden="true"></span>Match source</td></tr>
+                <tr><td>Premium totals</td><td><span class="tick" aria-hidden="true"></span>Match finance</td></tr>
+                <tr><td>Duplicates</td><td><span class="tick" aria-hidden="true"></span>Removed</td></tr>
+                <tr><td>Joins</td><td><span class="tick" aria-hidden="true"></span>One row per client</td></tr>
+                <tr><td>Latest load</td><td><span class="tick" aria-hidden="true"></span>Fresh</td></tr>
+              </tbody>
+            </table>
+          </figure>
         </div>
         <ol class="steps">
           <li><span class="step-n">1</span><h3>Agree the definitions</h3><p>What counts as a sale, which amount is revenue, which date sets the week.</p></li>
@@ -212,7 +228,7 @@
     </section>
 
     <!-- About -->
-    <section class="section wash" id="about" aria-labelledby="about-title">
+    <section class="section alt" id="about" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div>
           <h2 id="about-title">From the ledger to the lakehouse</h2>
@@ -233,12 +249,12 @@
     </section>
 
     <!-- Contact -->
-    <section class="section night contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
         <h2 id="contact-title">Let's talk data</h2>
         <p>If you need pipelines, reporting or financial analysis that people can trust, I'd like to hear about it.</p>
         <div class="actions">
-          <a class="btn btn-light" href="https://github.com/PreksG">GitHub: PreksG</a>
+          <a class="btn btn-primary" href="https://github.com/PreksG">GitHub: PreksG</a>
           <!-- TODO before publishing: add LinkedIn and a public contact email once approved -->
         </div>
       </div>
