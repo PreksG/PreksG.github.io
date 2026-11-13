@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prekeme Paul — Data Analytics Engineer</title>
+  <meta name="description" content="Prekeme “Pre-Gee” Paul, Data Analytics Engineer in Lagos with a background in FP&A and financial reporting. Case studies in data pipelines, data quality, BI and finance.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">Prekeme Paul</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <div class="identity">
+            <img class="avatar" src="https://github.com/PreksG.png?size=160" alt="Portrait of Prekeme Paul" width="64" height="64" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'avatar avatar-fallback',textContent:'PP',ariaHidden:'true'}))">
+            <p class="identity-text"><strong>Prekeme “Pre-Gee” Paul</strong><br>Data Analytics Engineer, Lagos</p>
+          </div>
+          <h1 id="hero-title">I reconcile before I report.</h1>
+          <p class="lede">A decade in finance taught me that a number is only useful once it agrees with its source. Now I build the data pipelines, quality checks and Power BI reports that make that true for financial services.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work">See my case studies</a>
+            <a class="btn btn-secondary" href="https://github.com/PreksG">View GitHub</a>
+          </div>
+        </div>
+
+        <figure class="ledger" aria-labelledby="ledger-caption">
+          <figcaption id="ledger-caption" class="ledger-title">Before any figure goes out</figcaption>
+          <table class="ledger-table">
+            <thead>
+              <tr><th scope="col">Check</th><th scope="col">Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Record counts</td><td><span class="tick" aria-hidden="true"></span>Match source</td></tr>
+              <tr><td>Premium totals</td><td><span class="tick" aria-hidden="true"></span>Match finance</td></tr>
+              <tr><td>Duplicate records</td><td><span class="tick" aria-hidden="true"></span>Removed</td></tr>
+              <tr><td>Joins</td><td><span class="tick" aria-hidden="true"></span>One row per client</td></tr>
+              <tr><td>Latest load</td><td><span class="tick" aria-hidden="true"></span>Fresh</td></tr>
+            </tbody>
+          </table>
+          <p class="ledger-note">The checks behind every pipeline I build.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="work-title">Selected work</h2>
+          <p>Anonymised case studies. No company data, names or real figures are published.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter case studies">
+          <button type="button" class="filter" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="engineering">Data engineering</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="bi">BI and reporting</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="fpna">FP&amp;A</button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="ai">AI</button>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+        <ol class="work-list" reversed>
+          <li class="work-item" data-tags="engineering">
+            <p class="work-domain">Insurance</p>
+            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/insurance/insurance-sales-revenue-pipeline">Insurance Sales-to-Revenue Reconciliation Pipeline</a></h3>
+            <p class="work-summary">Led a production pipeline on Microsoft Fabric and Databricks that turns digital policy sales into finance-reconciled revenue data for Life and General Business.</p>
+            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">PySpark, Delta Lake, Fabric, Databricks</span></p>
+          </li>
+          <li class="work-item" data-tags="engineering bi">
+            <p class="work-domain">Insurance</p>
+            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/high-value-client-ranking">High-Value Client Ranking Pipeline</a></h3>
+            <p class="work-summary">Ranked clients across four subsidiaries for executive management, and caught a join that multiplied their premiums many times over.</p>
+            <p class="work-meta"><span class="status status-partial">Partially implemented</span><span class="tools">PySpark, Databricks, Fabric, Power BI</span></p>
+          </li>
+          <li class="work-item" data-tags="fpna">
+            <p class="work-domain">Insurance</p>
+            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/fpna/insurance-budgeting-forecasting">Insurance Budgeting, Forecasting &amp; Board Reporting</a></h3>
+            <p class="work-summary">Ran the planning cycle from annual budget to Board pack, built the executive dashboard and led the automation of budgeting in Prophix.</p>
+            <p class="work-meta"><span class="status status-recurring">Recurring, 2022–2024</span><span class="tools">Excel, Prophix, Power BI</span></p>
+          </li>
+          <li class="work-item" data-tags="ai bi">
+            <p class="work-domain">Automotive lending</p>
+            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/management-intelligence/ai-weekly-management-report">AI-Assisted Weekly Management Intelligence Report</a></h3>
+            <p class="work-summary">A weekly leadership briefing drafted by AI from six Power BI models, held back automatically if the data has not refreshed.</p>
+            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">Claude, Power BI semantic models</span></p>
+          </li>
+          <li class="work-item" data-tags="bi">
+            <p class="work-domain">Automotive lending and insurance</p>
+            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/dashboard-root-cause-analysis">Dashboard Root-Cause Analysis</a></h3>
+            <p class="work-summary">Traced wrong, missing and inflated dashboard figures to truncated tables, double counting and filter conflicts, and fixed them where they started.</p>
+            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">Power BI, DAX, BigQuery</span></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="capabilities" aria-labelledby="cap-title">
+      <div class="wrap">
+        <h2 id="cap-title">What I do</h2>
+        <div class="cap-grid">
+          <div class="cap">
+            <h3>Data pipelines and quality</h3>
+            <p>PySpark pipelines on Microsoft Fabric and Databricks, layered from raw to reporting-ready, with reconciliation built in.</p>
+          </div>
+          <div class="cap">
+            <h3>BI and executive reporting</h3>
+            <p>Power BI models, DAX and dashboards that leadership relies on, and root-cause analysis when the numbers look wrong.</p>
+          </div>
+          <div class="cap">
+            <h3>Finance and FP&amp;A</h3>
+            <p>Budgeting, forecasting, variance analysis and Board reporting, from eight years in finance operations and three leading FP&amp;A.</p>
+          </div>
+          <div class="cap">
+            <h3>AI-enabled analytics <span class="developing">developing</span></h3>
+            <p>AI assistants working on top of semantic models, with the controls that make their output safe to send. Machine learning engineering is next.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="about-title">From the ledger to the lakehouse</h2>
+          <p>I started in finance, reconciling bank statements and proving ledgers. I moved into payments, then led financial planning and Board reporting. Each step put me closer to the data behind the numbers, until building that data became the job.</p>
+          <p>That path shapes how I work. I agree definitions before I build, I check totals before and after every join, and I explain results in the language finance and leadership use.</p>
+          <p class="aside">Alongside my main role, I have worked part-time as a BI analyst for a pan-African automotive finance company. I hold an MBA.</p>
+        </div>
+        <ol class="timeline" aria-label="Career path">
+          <li><span class="year">2014</span><span class="tl-body"><span class="role">Financial Analyst</span><span class="detail">Bank reconciliations, ledger proofing, collections reporting</span></span></li>
+          <li><span class="year">2018</span><span class="tl-body"><span class="role">Payment Analyst</span><span class="detail">Cash-flow reporting, multicurrency reconciliations, ledger postings</span></span></li>
+          <li><span class="year">2022</span><span class="tl-body"><span class="role">Lead, Financial Planning &amp; Reporting</span><span class="detail">Budgets, forecasts, CFO and Board packs</span></span></li>
+          <li><span class="year">2025</span><span class="tl-body"><span class="role">Senior Data Analytics Engineer</span><span class="detail">Pipelines, lakehouse models, BI enablement</span></span></li>
+        </ol>
+        <p class="timeline-note">All four roles at Leadway Assurance, Lagos.</p>
+      </div>
+    </section>
+
+    <section class="toolkit" aria-labelledby="tools-title">
+      <div class="wrap">
+        <h2 id="tools-title">Toolkit</h2>
+        <dl class="tool-groups">
+          <div>
+            <dt>Used in production</dt>
+            <dd><ul class="tags"><li>SQL</li><li>BigQuery</li><li>Python</li><li>PySpark</li><li>Microsoft Fabric</li><li>Databricks</li><li>Delta Lake</li><li>Azure Data Factory</li><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Excel</li><li>Prophix</li></ul></dd>
+          </div>
+          <div>
+            <dt>Exploring</dt>
+            <dd><ul class="tags tags-quiet"><li>Claude with Power BI (MCP)</li><li>Machine learning</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Get in touch</h2>
+        <p>The best way to reach me or see more of my work is on GitHub.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/PreksG">GitHub: PreksG</a>
+          <!-- TODO before publishing: add a LinkedIn link and a public contact email once approved -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Prekeme Paul. Case studies are anonymised; any demonstration data is synthetic.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
