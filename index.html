@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,128 +16,203 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="#top">Prekeme Paul</a>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">PP</span><span class="brand-name">Prekeme Paul</span><span class="brand-role">Data Analytics Engineer</span></a>
       <nav aria-label="Main">
         <ul class="nav-list">
-          <li><a href="#work">Work</a></li>
+          <li><a href="#work">Case studies</a></li>
+          <li><a href="#process">How I work</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <a class="btn btn-primary btn-small" href="#contact">Get in touch</a>
     </div>
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <div class="identity">
-            <img class="avatar" src="https://github.com/PreksG.png?size=160" alt="Portrait of Prekeme Paul" width="64" height="64" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'avatar avatar-fallback',textContent:'PP',ariaHidden:'true'}))">
-            <p class="identity-text"><strong>Prekeme “Pre-Gee” Paul</strong><br>Data Analytics Engineer, Lagos</p>
-          </div>
+          <p class="kicker">Data Analytics Engineer, Lagos</p>
           <h1 id="hero-title">I reconcile before I report.</h1>
           <p class="lede">A decade in finance taught me that a number is only useful once it agrees with its source. Now I build the data pipelines, quality checks and Power BI reports that make that true for financial services.</p>
+          <p class="stack">PySpark, SQL, Microsoft Fabric, Databricks, Power BI</p>
           <div class="actions">
-            <a class="btn btn-primary" href="#work">See my case studies</a>
+            <a class="btn btn-primary" href="#work">See case studies</a>
             <a class="btn btn-secondary" href="https://github.com/PreksG">View GitHub</a>
           </div>
+          <dl class="stats">
+            <div><dt>Years in finance and data</dt><dd>12</dd></div>
+            <div><dt>Published case studies</dt><dd>5</dd></div>
+            <div><dt>Cloud platforms in production</dt><dd>2</dd></div>
+          </dl>
         </div>
 
-        <figure class="ledger" aria-labelledby="ledger-caption">
-          <figcaption id="ledger-caption" class="ledger-title">Before any figure goes out</figcaption>
-          <table class="ledger-table">
-            <thead>
-              <tr><th scope="col">Check</th><th scope="col">Result</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Record counts</td><td><span class="tick" aria-hidden="true"></span>Match source</td></tr>
-              <tr><td>Premium totals</td><td><span class="tick" aria-hidden="true"></span>Match finance</td></tr>
-              <tr><td>Duplicate records</td><td><span class="tick" aria-hidden="true"></span>Removed</td></tr>
-              <tr><td>Joins</td><td><span class="tick" aria-hidden="true"></span>One row per client</td></tr>
-              <tr><td>Latest load</td><td><span class="tick" aria-hidden="true"></span>Fresh</td></tr>
-            </tbody>
-          </table>
-          <p class="ledger-note">The checks behind every pipeline I build.</p>
-        </figure>
+        <div class="hero-visual">
+          <div class="portrait">
+            <img class="avatar" src="https://github.com/PreksG.png?size=360" alt="Portrait of Prekeme Paul" width="180" height="180" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'avatar avatar-fallback',textContent:'PP'}))">
+          </div>
+          <figure class="ledger" aria-labelledby="ledger-caption">
+            <figcaption id="ledger-caption" class="ledger-title">Before any figure goes out</figcaption>
+            <table class="ledger-table">
+              <thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead>
+              <tbody>
+                <tr><td>Record counts</td><td><span class="tick" aria-hidden="true"></span>Match source</td></tr>
+                <tr><td>Premium totals</td><td><span class="tick" aria-hidden="true"></span>Match finance</td></tr>
+                <tr><td>Duplicates</td><td><span class="tick" aria-hidden="true"></span>Removed</td></tr>
+                <tr><td>Joins</td><td><span class="tick" aria-hidden="true"></span>One row per client</td></tr>
+                <tr><td>Latest load</td><td><span class="tick" aria-hidden="true"></span>Fresh</td></tr>
+              </tbody>
+            </table>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section class="band" id="work" aria-labelledby="work-title">
+    <!-- Case studies -->
+    <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="work-title">Selected work</h2>
-          <p>Anonymised case studies. No company data, names or real figures are published.</p>
+          <h2 id="work-title">Case studies</h2>
+          <p>Real projects, written up without company data. Names, figures and internal rules are withheld, and any demonstration data is synthetic.</p>
         </div>
 
         <div class="filters" role="group" aria-label="Filter case studies">
-          <button type="button" class="filter" aria-pressed="true" data-filter="all">All</button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="engineering">Data engineering</button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="bi">BI and reporting</button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="fpna">FP&amp;A</button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="ai">AI</button>
+          <button type="button" class="filter" aria-pressed="true" data-filter="all">All <span class="count">5</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="engineering">Data engineering <span class="count">2</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="bi">BI and reporting <span class="count">3</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="fpna">FP&amp;A <span class="count">1</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="ai">AI <span class="count">1</span></button>
         </div>
         <p class="sr-only" id="filter-status" aria-live="polite"></p>
 
-        <ol class="work-list" reversed>
-          <li class="work-item" data-tags="engineering">
-            <p class="work-domain">Insurance</p>
-            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/insurance/insurance-sales-revenue-pipeline">Insurance Sales-to-Revenue Reconciliation Pipeline</a></h3>
-            <p class="work-summary">Led a production pipeline on Microsoft Fabric and Databricks that turns digital policy sales into finance-reconciled revenue data for Life and General Business.</p>
-            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">PySpark, Delta Lake, Fabric, Databricks</span></p>
-          </li>
-          <li class="work-item" data-tags="engineering bi">
-            <p class="work-domain">Insurance</p>
-            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/high-value-client-ranking">High-Value Client Ranking Pipeline</a></h3>
-            <p class="work-summary">Ranked clients across four subsidiaries for executive management, and caught a join that multiplied their premiums many times over.</p>
-            <p class="work-meta"><span class="status status-partial">Partially implemented</span><span class="tools">PySpark, Databricks, Fabric, Power BI</span></p>
-          </li>
-          <li class="work-item" data-tags="fpna">
-            <p class="work-domain">Insurance</p>
-            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/fpna/insurance-budgeting-forecasting">Insurance Budgeting, Forecasting &amp; Board Reporting</a></h3>
-            <p class="work-summary">Ran the planning cycle from annual budget to Board pack, built the executive dashboard and led the automation of budgeting in Prophix.</p>
-            <p class="work-meta"><span class="status status-recurring">Recurring, 2022–2024</span><span class="tools">Excel, Prophix, Power BI</span></p>
-          </li>
-          <li class="work-item" data-tags="ai bi">
-            <p class="work-domain">Automotive lending</p>
-            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/management-intelligence/ai-weekly-management-report">AI-Assisted Weekly Management Intelligence Report</a></h3>
-            <p class="work-summary">A weekly leadership briefing drafted by AI from six Power BI models, held back automatically if the data has not refreshed.</p>
-            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">Claude, Power BI semantic models</span></p>
-          </li>
-          <li class="work-item" data-tags="bi">
-            <p class="work-domain">Automotive lending and insurance</p>
-            <h3><a href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/dashboard-root-cause-analysis">Dashboard Root-Cause Analysis</a></h3>
-            <p class="work-summary">Traced wrong, missing and inflated dashboard figures to truncated tables, double counting and filter conflicts, and fixed them where they started.</p>
-            <p class="work-meta"><span class="status status-done">Implemented</span><span class="tools">Power BI, DAX, BigQuery</span></p>
-          </li>
+        <div class="cards">
+          <article class="card" data-tags="engineering">
+            <div class="cover cover-pipeline" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><g class="c-box"><rect x="22" y="78" width="70" height="44" rx="6"/><rect x="118" y="78" width="70" height="44" rx="6"/><rect x="214" y="78" width="70" height="44" rx="6"/><rect x="310" y="78" width="70" height="44" rx="6"/></g><g class="c-line"><path d="M92 100h26M188 100h26M284 100h26"/></g><g class="c-label"><text x="57" y="104">Raw</text><text x="153" y="104">Rules</text><text x="249" y="104">Gold</text><text x="345" y="104">Check</text></g><circle class="c-ok" cx="372" cy="80" r="11"/><path class="c-okmark" d="M366 80l4 4 8-8"/></svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Insurance</span></p>
+              <h3>Insurance Sales-to-Revenue Reconciliation Pipeline</h3>
+              <p>Led a production pipeline on Fabric and Databricks that turns digital policy sales for Life and General Business into finance-reconciled revenue data.</p>
+              <ul class="tags"><li>PySpark</li><li>Delta Lake</li><li>Microsoft Fabric</li><li>Databricks</li></ul>
+              <p class="impact"><strong>Outcome.</strong> One agreed definition of a sale and of premium, reconciled before anyone uses the numbers.</p>
+              <a class="read" href="https://github.com/PreksG/analytics-case-studies/tree/main/insurance/insurance-sales-revenue-pipeline">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="engineering bi">
+            <div class="cover cover-ranking" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><g class="c-bar"><rect x="40" y="34" width="300" height="20" rx="4"/><rect x="40" y="66" width="250" height="20" rx="4"/><rect x="40" y="98" width="205" height="20" rx="4"/><rect x="40" y="130" width="160" height="20" rx="4"/></g><rect class="c-ghost" x="40" y="162" width="340" height="20" rx="4"/><g class="c-label c-left"><text x="48" y="48">1</text><text x="48" y="80">2</text><text x="48" y="112">3</text><text x="48" y="144">4</text></g><text class="c-warn" x="210" y="177">fan-out caught</text></svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-partial">Partially implemented</span><span>Insurance</span></p>
+              <h3>High-Value Client Ranking Pipeline</h3>
+              <p>Ranked clients across four subsidiaries for executive management, and caught a join that multiplied their premiums many times over.</p>
+              <ul class="tags"><li>PySpark</li><li>Databricks</li><li>Microsoft Fabric</li><li>Power BI</li></ul>
+              <p class="impact"><strong>Outcome.</strong> A ranking built on correct client-level figures, with checks that stop inflated premiums reaching executives.</p>
+              <a class="read" href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/high-value-client-ranking">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="fpna">
+            <div class="cover cover-budget" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><path class="c-axis" d="M36 170h336"/><g class="c-bar"><rect x="56" y="80" width="22" height="90"/><rect x="128" y="60" width="22" height="110"/><rect x="200" y="96" width="22" height="74"/><rect x="272" y="50" width="22" height="120"/></g><g class="c-bar2"><rect x="82" y="92" width="22" height="78"/><rect x="154" y="66" width="22" height="104"/><rect x="226" y="84" width="22" height="86"/><rect x="298" y="70" width="22" height="100"/></g><g class="c-label c-left"><text x="56" y="34">Budget</text><text x="140" y="34">Actual</text></g><rect class="c-bar" x="40" y="24" width="10" height="10"/><rect class="c-bar2" x="124" y="24" width="10" height="10"/></svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-recurring">Recurring, 2022–2024</span><span>Insurance</span></p>
+              <h3>Insurance Budgeting, Forecasting &amp; Board Reporting</h3>
+              <p>Ran the planning cycle from annual budget to Board pack, built the executive dashboard and led the automation of budgeting in Prophix.</p>
+              <ul class="tags"><li>Excel</li><li>Prophix</li><li>Power BI</li><li>IFRS 17</li></ul>
+              <p class="impact"><strong>Outcome.</strong> One consistent group plan, explained variances for the CFO and Board, and less manual preparation.</p>
+              <a class="read" href="https://github.com/PreksG/analytics-case-studies/tree/main/fpna/insurance-budgeting-forecasting">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="ai bi">
+            <div class="cover cover-brief" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><g class="c-box"><rect x="26" y="30" width="62" height="36" rx="5"/><rect x="26" y="82" width="62" height="36" rx="5"/><rect x="26" y="134" width="62" height="36" rx="5"/></g><g class="c-line"><path d="M88 48c40 0 40 52 80 52M88 100h80M88 152c40 0 40-52 80-52"/></g><path class="c-gate" d="M190 76l24 24-24 24-24-24z"/><path class="c-line" d="M214 100h34"/><rect class="c-doc" x="248" y="38" width="120" height="124" rx="6"/><g class="c-rule"><path d="M264 62h88M264 82h70M264 102h88M264 122h56M264 142h76"/></g></svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Automotive lending</span></p>
+              <h3>AI-Assisted Weekly Management Intelligence Report</h3>
+              <p>A weekly leadership briefing drafted by AI from six Power BI models, held back automatically if the data has not refreshed.</p>
+              <ul class="tags"><li>Claude</li><li>Power BI</li><li>Semantic models</li><li>Scheduling</li></ul>
+              <p class="impact"><strong>Outcome.</strong> One forward-looking read across six reports, and no briefing sent on stale data.</p>
+              <a class="read" href="https://github.com/PreksG/analytics-case-studies/tree/main/management-intelligence/ai-weekly-management-report">Read the case study</a>
+            </div>
+          </article>
+
+          <article class="card" data-tags="bi">
+            <div class="cover cover-rca" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><path class="c-axis" d="M36 170h336"/><path class="c-trend" d="M40 140l50-18 50 10 50-34 50 6 50-26 50-12"/><path class="c-spike" d="M240 104l20-74 20 62"/><circle class="c-lens" cx="262" cy="56" r="34"/><path class="c-lens-h" d="M286 80l30 30"/></svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Automotive lending and insurance</span></p>
+              <h3>Dashboard Root-Cause Analysis</h3>
+              <p>Traced wrong, missing and inflated dashboard figures to truncated tables, double counting and filter conflicts, and fixed them where they started.</p>
+              <ul class="tags"><li>Power BI</li><li>DAX</li><li>BigQuery</li><li>Power Query</li></ul>
+              <p class="impact"><strong>Outcome.</strong> Causes fixed at the right layer, with clear hand-offs and plain-language updates for the business.</p>
+              <a class="read" href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/dashboard-root-cause-analysis">Read the case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section class="section night" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="process-title">How I work</h2>
+          <p>The same six steps on every project, from the first conversation to production.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="step-n">1</span><h3>Agree the definitions</h3><p>What counts as a sale, which amount is revenue, which date sets the week.</p></li>
+          <li><span class="step-n">2</span><h3>Land the raw data</h3><p>Source data kept as received, so every figure can be traced back.</p></li>
+          <li><span class="step-n">3</span><h3>Apply the rules</h3><p>Types, dates, channel mapping, duplicates and eligibility in one place.</p></li>
+          <li><span class="step-n">4</span><h3>Build at a declared grain</h3><p>One row per entity before any join, so totals cannot multiply.</p></li>
+          <li><span class="step-n">5</span><h3>Reconcile</h3><p>Counts and amounts checked against the source and finance before use.</p></li>
+          <li><span class="step-n">6</span><h3>Deploy and explain</h3><p>Into production, with results explained in the language finance uses.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="capabilities" aria-labelledby="cap-title">
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="wrap">
-        <h2 id="cap-title">What I do</h2>
-        <div class="cap-grid">
-          <div class="cap">
-            <h3>Data pipelines and quality</h3>
-            <p>PySpark pipelines on Microsoft Fabric and Databricks, layered from raw to reporting-ready, with reconciliation built in.</p>
+        <div class="section-head">
+          <h2 id="skills-title">What I do</h2>
+          <p>Four areas I work across, and the tools I use in each.</p>
+        </div>
+        <div class="services">
+          <div class="service">
+            <h3>Data engineering</h3>
+            <p>Layered pipelines from raw to reporting-ready, on Microsoft Fabric and Databricks, with reconciliation built in.</p>
+            <ul class="tags"><li>PySpark</li><li>Delta Lake</li><li>Microsoft Fabric</li><li>Databricks</li><li>Azure Data Factory</li></ul>
           </div>
-          <div class="cap">
+          <div class="service">
             <h3>BI and executive reporting</h3>
-            <p>Power BI models, DAX and dashboards that leadership relies on, and root-cause analysis when the numbers look wrong.</p>
+            <p>Power BI models and dashboards that leadership relies on, and root-cause analysis when numbers look wrong.</p>
+            <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li><li>SQL</li><li>BigQuery</li></ul>
           </div>
-          <div class="cap">
+          <div class="service">
             <h3>Finance and FP&amp;A</h3>
             <p>Budgeting, forecasting, variance analysis and Board reporting, from eight years in finance operations and three leading FP&amp;A.</p>
+            <ul class="tags"><li>Excel</li><li>Prophix</li><li>Financial modelling</li><li>Reconciliation</li></ul>
           </div>
-          <div class="cap">
+          <div class="service">
             <h3>AI-enabled analytics <span class="developing">developing</span></h3>
-            <p>AI assistants working on top of semantic models, with the controls that make their output safe to send. Machine learning engineering is next.</p>
+            <p>AI assistants on top of semantic models, with the controls that make their output safe to send. Machine learning is next.</p>
+            <ul class="tags"><li>Claude</li><li>Power BI MCP</li><li>Python</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="band" id="about" aria-labelledby="about-title">
+    <!-- About -->
+    <section class="section wash" id="about" aria-labelledby="about-title">
       <div class="wrap about-grid">
         <div>
           <h2 id="about-title">From the ledger to the lakehouse</h2>
@@ -145,47 +220,35 @@
           <p>That path shapes how I work. I agree definitions before I build, I check totals before and after every join, and I explain results in the language finance and leadership use.</p>
           <p class="aside">Alongside my main role, I have worked part-time as a BI analyst for a pan-African automotive finance company. I hold an MBA.</p>
         </div>
-        <ol class="timeline" aria-label="Career path">
-          <li><span class="year">2014</span><span class="tl-body"><span class="role">Financial Analyst</span><span class="detail">Bank reconciliations, ledger proofing, collections reporting</span></span></li>
-          <li><span class="year">2018</span><span class="tl-body"><span class="role">Payment Analyst</span><span class="detail">Cash-flow reporting, multicurrency reconciliations, ledger postings</span></span></li>
-          <li><span class="year">2022</span><span class="tl-body"><span class="role">Lead, Financial Planning &amp; Reporting</span><span class="detail">Budgets, forecasts, CFO and Board packs</span></span></li>
-          <li><span class="year">2025</span><span class="tl-body"><span class="role">Senior Data Analytics Engineer</span><span class="detail">Pipelines, lakehouse models, BI enablement</span></span></li>
-        </ol>
-        <p class="timeline-note">All four roles at Leadway Assurance, Lagos.</p>
+        <div>
+          <ol class="timeline" aria-label="Career path">
+            <li><span class="year">2014</span><span class="tl-body"><span class="role">Financial Analyst</span><span class="detail">Bank reconciliations, ledger proofing, collections reporting</span></span></li>
+            <li><span class="year">2018</span><span class="tl-body"><span class="role">Payment Analyst</span><span class="detail">Cash-flow reporting, multicurrency reconciliations, ledger postings</span></span></li>
+            <li><span class="year">2022</span><span class="tl-body"><span class="role">Lead, Financial Planning &amp; Reporting</span><span class="detail">Budgets, forecasts, CFO and Board packs</span></span></li>
+            <li><span class="year">2025</span><span class="tl-body"><span class="role">Senior Data Analytics Engineer</span><span class="detail">Pipelines, lakehouse models, BI enablement</span></span></li>
+          </ol>
+          <p class="timeline-note">All four roles at Leadway Assurance, Lagos.</p>
+        </div>
       </div>
     </section>
 
-    <section class="toolkit" aria-labelledby="tools-title">
+    <!-- Contact -->
+    <section class="section night contact" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
-        <h2 id="tools-title">Toolkit</h2>
-        <dl class="tool-groups">
-          <div>
-            <dt>Used in production</dt>
-            <dd><ul class="tags"><li>SQL</li><li>BigQuery</li><li>Python</li><li>PySpark</li><li>Microsoft Fabric</li><li>Databricks</li><li>Delta Lake</li><li>Azure Data Factory</li><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Excel</li><li>Prophix</li></ul></dd>
-          </div>
-          <div>
-            <dt>Exploring</dt>
-            <dd><ul class="tags tags-quiet"><li>Claude with Power BI (MCP)</li><li>Machine learning</li></ul></dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Get in touch</h2>
-        <p>The best way to reach me or see more of my work is on GitHub.</p>
+        <h2 id="contact-title">Let's talk data</h2>
+        <p>If you need pipelines, reporting or financial analysis that people can trust, I'd like to hear about it.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://github.com/PreksG">GitHub: PreksG</a>
-          <!-- TODO before publishing: add a LinkedIn link and a public contact email once approved -->
+          <a class="btn btn-light" href="https://github.com/PreksG">GitHub: PreksG</a>
+          <!-- TODO before publishing: add LinkedIn and a public contact email once approved -->
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="wrap footer-inner">
       <p>© 2026 Prekeme Paul. Case studies are anonymised; any demonstration data is synthetic.</p>
+      <a href="#top">Back to top</a>
     </div>
   </footer>
 
