@@ -2,37 +2,37 @@
   <title id="t">Illustration: budgeting, forecasting and Board reporting</title>
   <desc id="d">Conceptual chart with invented shapes, not real figures. Budget and actual bars by period sit beside a Board pack page listing explained variances.</desc>
   <defs>
-    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d9dee6"/></pattern>
-    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0b1526" flood-opacity=".08"/></filter>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1f2933"/></pattern>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity=".45"/></filter>
   </defs>
-  <rect width="800" height="450" fill="#f7f8fa"/>
+  <rect width="800" height="450" fill="#10161d"/>
   <rect width="800" height="450" fill="url(#g)"/>
   <g filter="url(#s)" font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <rect x="40" y="70" width="400" height="310" rx="10" fill="#fff" stroke="#d2d7e0"/>
-    <text x="60" y="102" font-size="14" font-weight="600" fill="#0b1526">Budget vs actual</text>
-    <rect x="270" y="92" width="10" height="10" rx="2" fill="#cfd6e0"/><text x="286" y="101" font-size="11.5" fill="#536074">Budget</text>
-    <rect x="344" y="92" width="10" height="10" rx="2" fill="#0f2a4a"/><text x="360" y="101" font-size="11.5" fill="#536074">Actual</text>
-    <g stroke="#eef1f5"><line x1="60" y1="150" x2="420" y2="150"/><line x1="60" y1="200" x2="420" y2="200"/><line x1="60" y1="250" x2="420" y2="250"/><line x1="60" y1="300" x2="420" y2="300"/></g>
-    <line x1="60" y1="340" x2="420" y2="340" stroke="#cfd6e0"/>
-    <g fill="#cfd6e0"><rect x="78" y="210" width="20" height="130" rx="2"/><rect x="138" y="190" width="20" height="150" rx="2"/><rect x="198" y="200" width="20" height="140" rx="2"/><rect x="258" y="170" width="20" height="170" rx="2"/><rect x="318" y="180" width="20" height="160" rx="2"/><rect x="378" y="160" width="20" height="180" rx="2"/></g>
-    <g fill="#0f2a4a"><rect x="100" y="222" width="20" height="118" rx="2"/><rect x="160" y="176" width="20" height="164" rx="2"/><rect x="220" y="214" width="20" height="126" rx="2"/><rect x="280" y="158" width="20" height="182" rx="2"/><rect x="340" y="186" width="20" height="154" rx="2"/><rect x="400" y="150" width="14" height="190" rx="2" opacity=".35"/></g>
-    <g font-family="Consolas, Menlo, monospace" font-size="10.5" fill="#7c8698"><text x="88" y="360">P1</text><text x="148" y="360">P2</text><text x="208" y="360">P3</text><text x="268" y="360">P4</text><text x="328" y="360">P5</text><text x="378" y="360">Fcst</text></g>
+    <rect x="40" y="70" width="400" height="310" rx="10" fill="#18202a" stroke="#313d4a"/>
+    <text x="60" y="102" font-size="14" font-weight="600" fill="#edf1f5">Budget vs actual</text>
+    <rect x="270" y="92" width="10" height="10" rx="2" fill="#3a4655"/><text x="286" y="101" font-size="11.5" fill="#95a1ae">Budget</text>
+    <rect x="344" y="92" width="10" height="10" rx="2" fill="#dbe3ec"/><text x="360" y="101" font-size="11.5" fill="#95a1ae">Actual</text>
+    <g stroke="#222c37"><line x1="60" y1="150" x2="420" y2="150"/><line x1="60" y1="200" x2="420" y2="200"/><line x1="60" y1="250" x2="420" y2="250"/><line x1="60" y1="300" x2="420" y2="300"/></g>
+    <line x1="60" y1="340" x2="420" y2="340" stroke="#3a4655"/>
+    <g fill="#3a4655"><rect x="78" y="210" width="20" height="130" rx="2"/><rect x="138" y="190" width="20" height="150" rx="2"/><rect x="198" y="200" width="20" height="140" rx="2"/><rect x="258" y="170" width="20" height="170" rx="2"/><rect x="318" y="180" width="20" height="160" rx="2"/><rect x="378" y="160" width="20" height="180" rx="2"/></g>
+    <g fill="#dbe3ec"><rect x="100" y="222" width="20" height="118" rx="2"/><rect x="160" y="176" width="20" height="164" rx="2"/><rect x="220" y="214" width="20" height="126" rx="2"/><rect x="280" y="158" width="20" height="182" rx="2"/><rect x="340" y="186" width="20" height="154" rx="2"/><rect x="400" y="150" width="14" height="190" rx="2" opacity=".35"/></g>
+    <g font-family="Consolas, Menlo, monospace" font-size="10.5" fill="#7d8997"><text x="88" y="360">P1</text><text x="148" y="360">P2</text><text x="208" y="360">P3</text><text x="268" y="360">P4</text><text x="328" y="360">P5</text><text x="378" y="360">Fcst</text></g>
 
-    <rect x="478" y="56" width="282" height="338" rx="10" fill="#fff" stroke="#d2d7e0"/>
-    <rect x="478" y="56" width="282" height="8" rx="4" fill="#0f2a4a"/>
-    <text x="498" y="96" font-family="Georgia, serif" font-size="18" fill="#0b1526">Board pack</text>
-    <text x="498" y="116" font-size="11.5" fill="#536074">Variance analysis and scenarios</text>
-    <line x1="498" y1="132" x2="740" y2="132" stroke="#e4e8ee"/>
-    <g font-size="12" fill="#27344a"><text x="498" y="160">Volume</text><text x="498" y="196">Price</text><text x="498" y="232">Timing</text><text x="498" y="268">One-off</text></g>
-    <g><rect x="640" y="148" width="22" height="16" rx="3" fill="#e6f3f1"/><text x="651" y="160" font-size="12" fill="#0d7266" text-anchor="middle" font-weight="700">+</text>
-       <rect x="640" y="184" width="22" height="16" rx="3" fill="#fcf2e3"/><text x="651" y="196" font-size="12" fill="#9a5800" text-anchor="middle" font-weight="700">−</text>
-       <rect x="640" y="220" width="22" height="16" rx="3" fill="#e6f3f1"/><text x="651" y="232" font-size="12" fill="#0d7266" text-anchor="middle" font-weight="700">+</text>
-       <rect x="640" y="256" width="22" height="16" rx="3" fill="#fcf2e3"/><text x="651" y="268" font-size="12" fill="#9a5800" text-anchor="middle" font-weight="700">−</text></g>
-    <g fill="#eef1f5"><rect x="676" y="152" width="64" height="8" rx="3"/><rect x="676" y="188" width="50" height="8" rx="3"/><rect x="676" y="224" width="58" height="8" rx="3"/><rect x="676" y="260" width="40" height="8" rx="3"/></g>
-    <line x1="498" y1="290" x2="740" y2="290" stroke="#e4e8ee"/>
-    <circle cx="507" cy="320" r="9" fill="#0d7266"/><path d="M502.5 320l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="524" y="324" font-size="12" fill="#27344a">Actuals agree with the ledger</text>
-    <circle cx="507" cy="352" r="9" fill="#0d7266"/><path d="M502.5 352l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="524" y="356" font-size="12" fill="#27344a">Every material variance explained</text>
+    <rect x="478" y="56" width="282" height="338" rx="10" fill="#18202a" stroke="#313d4a"/>
+    <rect x="478" y="56" width="282" height="8" rx="4" fill="#dbe3ec"/>
+    <text x="498" y="96" font-family="Georgia, serif" font-size="18" fill="#edf1f5">Board pack</text>
+    <text x="498" y="116" font-size="11.5" fill="#95a1ae">Variance analysis and scenarios</text>
+    <line x1="498" y1="132" x2="740" y2="132" stroke="#28323e"/>
+    <g font-size="12" fill="#c5ced8"><text x="498" y="160">Volume</text><text x="498" y="196">Price</text><text x="498" y="232">Timing</text><text x="498" y="268">One-off</text></g>
+    <g><rect x="640" y="148" width="22" height="16" rx="3" fill="#12291f"/><text x="651" y="160" font-size="12" fill="#3ccf8e" text-anchor="middle" font-weight="700">+</text>
+       <rect x="640" y="184" width="22" height="16" rx="3" fill="#2e2312"/><text x="651" y="196" font-size="12" fill="#f0a64b" text-anchor="middle" font-weight="700">−</text>
+       <rect x="640" y="220" width="22" height="16" rx="3" fill="#12291f"/><text x="651" y="232" font-size="12" fill="#3ccf8e" text-anchor="middle" font-weight="700">+</text>
+       <rect x="640" y="256" width="22" height="16" rx="3" fill="#2e2312"/><text x="651" y="268" font-size="12" fill="#f0a64b" text-anchor="middle" font-weight="700">−</text></g>
+    <g fill="#222c37"><rect x="676" y="152" width="64" height="8" rx="3"/><rect x="676" y="188" width="50" height="8" rx="3"/><rect x="676" y="224" width="58" height="8" rx="3"/><rect x="676" y="260" width="40" height="8" rx="3"/></g>
+    <line x1="498" y1="290" x2="740" y2="290" stroke="#28323e"/>
+    <circle cx="507" cy="320" r="9" fill="#3ccf8e"/><path d="M502.5 320l3 3 5-6" fill="none" stroke="#04140d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="524" y="324" font-size="12" fill="#c5ced8">Actuals agree with the ledger</text>
+    <circle cx="507" cy="352" r="9" fill="#3ccf8e"/><path d="M502.5 352l3 3 5-6" fill="none" stroke="#04140d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="524" y="356" font-size="12" fill="#c5ced8">Every material variance explained</text>
   </g>
 </svg>

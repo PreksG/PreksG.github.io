@@ -447,7 +447,8 @@ def render(i, s):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{e(s["title"])} — Prekeme Paul</title>
   <meta name="description" content="{e(s["lede"])}">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0a0e13">
+  <meta name="color-scheme" content="dark">
   <link rel="canonical" href="{url}">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Prekeme Paul">

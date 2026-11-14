@@ -7,7 +7,7 @@ Every image and file the site serves, what it is for, where it came from and its
 | `headshot.jpg` (560×560) | Portrait fallback; JSON-LD `image` | Supplied by Prekeme Paul | Owner's own photograph, used with permission |
 | `img/headshot-360.webp`, `img/headshot-560.webp` | Responsive WebP portrait (hero, overview) | Resized from `headshot.jpg` (Pillow, quality 82) | As above |
 | `og-image.png` (1200×630) | Open Graph / social sharing preview | Designed for this site from the headshot and site typography; rendered with headless Edge | Owner's own; fonts under SIL Open Font Licence |
-| `apple-touch-icon.png` (180×180) | Home-screen icon | Drawn for this site (navy tile, check mark) | Original work |
+| `apple-touch-icon.png` (180×180) | Home-screen icon | Drawn for this site (charcoal tile, green check mark) | Original work |
 | `../favicon.svg` | Browser tab icon | Drawn for this site | Original work |
 | `illustrations/sales-revenue-pipeline.svg` | Cover: Insurance Sales-to-Revenue Reconciliation Pipeline | Original SVG drawn from the published case study | Original work. **Illustrative, not a screenshot** |
 | `illustrations/client-ranking.svg` | Cover: High-Value Client Ranking Pipeline | Original SVG | Original work. **Illustrative; no real figures** |
