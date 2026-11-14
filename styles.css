@@ -567,3 +567,59 @@ ul, ol { margin: 0; padding: 0; }
 .cs-step h3.cs-sub + ul.list { margin-top: .6rem; }
 .cs-step .cs-outcome { max-width: 42rem; font-size: 1.1rem; line-height: 1.55; color: var(--ink); margin-bottom: 1rem; }
 .cs-step .cs-outcome b { font-weight: 600; }
+
+/* ---------- Journey (About) ---------- */
+.journey-head { max-width: 52rem; margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.journey-head h2 { margin-bottom: 1.25rem; }
+.journey-intro { color: var(--ink-2); font-size: 1.1rem; max-width: 48rem; }
+.journey { list-style: none; display: grid; gap: 1rem; }
+@media (min-width: 48rem) { .journey { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 66rem) { .journey { grid-template-columns: repeat(3, minmax(0, 1fr)); } .journey .stage-now { grid-column: span 2; } }
+.stage { position: relative; display: flex; flex-direction: column; gap: .6rem; padding: 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); }
+.stage::before { content: ""; position: absolute; left: 1.5rem; top: -1px; width: 2rem; height: 2px; background: var(--accent); }
+.stage-top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family: var(--mono); font-size: .75rem; }
+.stage-n { color: var(--accent); font-weight: 600; }
+.stage-years { color: var(--muted); letter-spacing: .04em; text-transform: uppercase; text-align: right; }
+.stage h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; line-height: 1.2; }
+.stage p:not(.stage-top) { color: var(--ink-2); font-size: .95rem; }
+.stage-now { border-color: rgba(60, 207, 142, .45); background: linear-gradient(180deg, rgba(60, 207, 142, .06), transparent 70%), var(--surface); }
+.journey-foot { display: grid; gap: 2.5rem 5rem; margin-top: clamp(2.5rem, 2rem + 2vw, 3.5rem); }
+@media (min-width: 60rem) { .journey-foot { grid-template-columns: 1fr 1fr; align-items: start; } }
+.journey-next > p { color: var(--ink-2); margin-bottom: 1rem; }
+.ai-tiers { margin: 0; border-top: 1px solid var(--line-strong); }
+.ai-tiers div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+.ai-tiers dt { font-family: var(--mono); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); padding-top: .2rem; }
+.ai-tiers dd { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.ai-tiers-compact { border-top-color: var(--line); }
+.ai-tiers-compact div { grid-template-columns: 7.5rem 1fr; padding: .55rem 0; }
+.ai-tiers-compact dd { font-size: .88rem; }
+@media (max-width: 30rem) { .ai-tiers div, .ai-tiers-compact div { grid-template-columns: 1fr; gap: .2rem; } }
+
+/* ---------- Expertise: four career-aligned groups ---------- */
+@media (min-width: 66rem) { .expertise.expertise-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---------- Case study tiers ---------- */
+.cards-subhead { display: flex; align-items: center; gap: 1rem; margin: clamp(2.5rem, 2rem + 2vw, 3.5rem) 0 1.25rem; font-family: var(--mono); font-size: .78rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.cards-subhead::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.cards-subhead[hidden] { display: none; }
+@media (max-width: 30rem) { .card-meta .sep { display: none; } }
+
+/* ---------- Experience ---------- */
+.tl-function { margin-top: .35rem; font-size: .9rem; color: var(--subtle); font-style: italic; }
+.timeline > li.is-side::before { border-style: dashed; border-color: var(--muted); }
+.exp-side .employer + .employer { margin-top: .75rem; }
+.exp-side .employer-side { border-style: dashed; }
+
+/* ---------- Case study pages: 11-section format ---------- */
+.cs-table { width: 100%; max-width: 42rem; border-collapse: collapse; font-size: .95rem; }
+.cs-table th, .cs-table td { text-align: left; padding: .7rem .75rem .7rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cs-table thead th { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--subtle); font-weight: 500; }
+.cs-table tbody th { width: 38%; font-weight: 600; color: var(--ink); }
+.cs-table td { color: var(--ink-2); }
+.cs-step ol.list-num { list-style: none; counter-reset: obj; display: grid; gap: .6rem; max-width: 42rem; }
+.cs-step ol.list-num li { counter-increment: obj; position: relative; padding-left: 2.2rem; color: var(--ink-2); }
+.cs-step ol.list-num li::before { content: counter(obj, decimal-leading-zero); position: absolute; left: 0; top: .2rem; font-family: var(--mono); font-size: .75rem; color: var(--accent); }
+.cs-next { margin-top: 1rem; color: var(--muted); max-width: 42rem; }
+.cs-caps { margin-top: .75rem; }
+article > .cs-cta { margin: 0 0 2.5rem; }
+@media (min-width: 62rem) { .cs-aside { max-height: calc(100vh - var(--header-h) - 3rem); overflow-y: auto; } }

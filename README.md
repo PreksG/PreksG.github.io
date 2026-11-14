@@ -12,7 +12,8 @@ script.js                  Navigation, scroll reveals, filters, counters, ledger
 404.html, robots.txt, sitemap.xml
 favicon.svg
 assets/                    Headshot, CV, social image, illustrations (see assets/ASSET-INVENTORY.md)
-tools/build_case_studies.py  Regenerates case-studies/*.html from the content inside it
+tools/case_study_content.py  Content for every case-study page (edit this)
+tools/build_case_studies.py  Renders case-studies/*.html, plus redirects for merged studies
 ```
 
 ## Preview locally
@@ -27,13 +28,13 @@ Then open http://localhost:8000. (Opening `index.html` directly also works, but 
 
 ## Editing a case study page
 
-Case study pages are generated so that all five share one layout. Edit the content in `tools/build_case_studies.py`, then run:
+Case study pages are generated so they all share one layout. Edit the content in `tools/case_study_content.py`, then run:
 
 ```bash
 python tools/build_case_studies.py
 ```
 
-and commit the regenerated HTML. The full write-ups live in [PreksG/analytics-case-studies](https://github.com/PreksG/analytics-case-studies), which is the source of truth: do not add figures or outcomes that are not in those write-ups.
+and commit the regenerated HTML. Sources of truth are the write-ups in [PreksG/analytics-case-studies](https://github.com/PreksG/analytics-case-studies) and the owner's project inventory. Do not add figures or outcomes that are not in those sources. A section with no evidence is left out, not written up.
 
 ## Deploy
 

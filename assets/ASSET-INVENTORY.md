@@ -14,6 +14,14 @@ Every image and file the site serves, what it is for, where it came from and its
 | `illustrations/fpna-board-reporting.svg` | Cover: Insurance Budgeting, Forecasting & Board Reporting | Original SVG; bar heights are invented shapes | Original work. **Illustrative; no real figures** |
 | `illustrations/ai-management-report.svg` | Cover: AI-Assisted Weekly Management Intelligence Report | Original SVG | Original work. **Illustrative, not a screenshot** |
 | `illustrations/dashboard-root-cause.svg` | Cover: Dashboard Root-Cause Analysis | Original SVG | Original work. **Illustrative, not a screenshot** |
+| `illustrations/gl-crosswalk.svg` | Cover: Legacy-to-ERP GL Crosswalk | Original SVG | Original work. **Illustrative; no real figures** |
+| `illustrations/production-vs-budget.svg` | Cover: Weekly & YTD Production vs Budget | Original SVG; bar heights are invented shapes | Original work. **Illustrative; no real figures** |
+| `illustrations/customer-segmentation.svg` | Cover: Customer Segmentation (K-Means) | Original SVG; points are invented | Original work. **Illustrative; no real customers** |
+| `illustrations/motor-claims-forecast.svg` | Cover: Motor Claims Forecasting | Original SVG; line is invented | Original work. **Illustrative; no real claims** |
+| `illustrations/onboarding-feeds.svg` | Cover: Customer Onboarding Feeds for CX | Original SVG | Original work. **Illustrative, not a screenshot** |
+| `illustrations/cross-sell-ecosystem.svg` | Cover: Cross-Sell & Customer Ecosystem Analytics | Original SVG | Original work. **Illustrative, not a screenshot** |
+| `illustrations/database-replication.svg` | Cover: Enterprise Lakehouse & Ingestion Architecture | Original SVG | Original work. **Illustrative, not a screenshot** |
+| `illustrations/data-quality-controls.svg` | Cover: Data Quality, Reconciliation & Pipeline Controls | Original SVG | Original work. **Illustrative, not a screenshot** |
 | `Prekeme-Paul-CV.pdf` | Downloadable CV | Supplied by Prekeme Paul | Owner's own document |
 
 ## Fonts

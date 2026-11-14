@@ -157,6 +157,13 @@
       if (status) {
         status.textContent = 'Showing ' + shown + ' case ' + (shown === 1 ? 'study' : 'studies') + '.';
       }
+      // Hide a tier heading when the filter leaves its grid empty.
+      document.querySelectorAll('.cards-subhead').forEach(function (head) {
+        var grid = head.nextElementSibling;
+        var any = grid && Array.prototype.some.call(grid.querySelectorAll('.card'), function (c) { return !c.hidden; });
+        head.hidden = !any;
+        if (any) { head.classList.add('is-visible'); }
+      });
     });
   });
 
