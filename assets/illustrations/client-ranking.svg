@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+  <title id="t">Illustration: high-value client ranking</title>
+  <desc id="d">Conceptual diagram. Four subsidiaries feed a client-level step with one row per client, guarded by a row-count check, which produces a ranked list. An inflated bar caused by join fan-out is shown as caught.</desc>
+  <defs>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d9dee6"/></pattern>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#7c8698"/></marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0b1526" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="#f7f8fa"/>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g font-family="Consolas, Menlo, monospace" font-size="11" fill="#7c8698" letter-spacing="1">
+    <text x="40" y="60">SUBSIDIARIES</text><text x="232" y="60">CLIENT LEVEL</text><text x="452" y="60">RANKED CLIENTS</text>
+  </g>
+  <g fill="none" stroke="#9aa4b4" stroke-width="1.6">
+    <path d="M176 104c30 0 26 96 54 104"/><path d="M176 164c30 0 26 44 54 52"/><path d="M176 224c30 0 26-4 54 0"/><path d="M176 284c30 0 26-52 54-60" marker-end="url(#a)"/>
+    <path d="M392 214h42" marker-end="url(#a)"/>
+  </g>
+  <g filter="url(#s)" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g fill="#fff" stroke="#d2d7e0"><rect x="40" y="82" width="136" height="44" rx="8"/><rect x="40" y="142" width="136" height="44" rx="8"/><rect x="40" y="202" width="136" height="44" rx="8"/><rect x="40" y="262" width="136" height="44" rx="8"/></g>
+    <g font-size="13" font-weight="600" fill="#0b1526"><text x="56" y="109">General insurance</text><text x="56" y="169">Life</text><text x="56" y="229">Health</text><text x="56" y="289">Asset management</text></g>
+
+    <rect x="230" y="150" width="162" height="128" rx="10" fill="#fff" stroke="#0f2a4a" stroke-width="1.4"/>
+    <text x="246" y="178" font-size="14" font-weight="600" fill="#0b1526">One row per client</text>
+    <text x="246" y="198" font-size="11.5" fill="#536074">aggregate before joining</text>
+    <line x1="246" y1="212" x2="376" y2="212" stroke="#e4e8ee"/>
+    <text x="246" y="232" font-size="11.5" fill="#27344a">Rows before join</text><text x="376" y="232" font-size="11.5" fill="#27344a" text-anchor="end">n</text>
+    <text x="246" y="252" font-size="11.5" fill="#27344a">Rows after join</text><text x="376" y="252" font-size="11.5" fill="#27344a" text-anchor="end">n</text>
+    <circle cx="364" cy="174" r="9" fill="#0d7266"/><path d="M359.5 174l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="436" y="82" width="324" height="288" rx="10" fill="#fff" stroke="#d2d7e0"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="12" fill="#7c8698"><text x="454" y="118">01</text><text x="454" y="152">02</text><text x="454" y="186">03</text><text x="454" y="220">04</text><text x="454" y="254">05</text><text x="454" y="288">06</text></g>
+    <g fill="#0f2a4a"><rect x="484" y="106" width="250" height="16" rx="3"/><rect x="484" y="140" width="214" height="16" rx="3" opacity=".88"/><rect x="484" y="174" width="182" height="16" rx="3" opacity=".76"/><rect x="484" y="208" width="150" height="16" rx="3" opacity=".64"/><rect x="484" y="242" width="124" height="16" rx="3" opacity=".52"/><rect x="484" y="276" width="100" height="16" rx="3" opacity=".4"/></g>
+    <rect x="484" y="314" width="258" height="16" rx="3" fill="none" stroke="#9a5800" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <text x="484" y="352" font-size="11.5" fill="#9a5800" font-weight="600">Inflated by join fan-out: caught by the row-count check</text>
+  </g>
+</svg>
