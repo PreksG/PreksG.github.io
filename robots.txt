@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://preksg.github.io/sitemap.xml
