@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+  <title id="t">Illustration: motor claims forecasting</title>
+  <desc id="d">Conceptual chart with an invented line, not real claims. Monthly motor claims history with a yearly seasonal pattern, continued by a dashed forecast line.</desc>
+  <defs>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1f2933"/></pattern>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0l10 5-10 5z" fill="#7d8997"/></marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="800" height="450" fill="#10161d"/>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g filter="url(#s)" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="40" y="70" width="720" height="310" rx="10" fill="#18202a" stroke="#313d4a"/><text x="60" y="100" font-size="14" font-weight="600" fill="#edf1f5">Monthly motor claims</text><text x="60" y="118" font-size="11.5" fill="#95a1ae">Prophet with yearly seasonality · lag features · 3-month moving average</text><rect x="500" y="92" width="18" height="3" fill="#dbe3ec"/><text x="524" y="98" font-size="11.5" fill="#95a1ae">History</text><path d="M590 93h18" stroke="#3ccf8e" stroke-width="3" stroke-dasharray="5 4"/><text x="614" y="98" font-size="11.5" fill="#95a1ae">Forecast</text><line x1="60" y1="340" x2="740" y2="340" stroke="#3a4655"/><line x1="380" y1="140" x2="380" y2="340" stroke="#3a4655" stroke-dasharray="3 4"/><path d="M70 242 L84 234 L97 221 L110 216 L124 219 L138 220 L151 242 L164 256 L178 266 L192 268 L205 255 L218 251 L232 234 L246 218 L259 206 L272 192 L286 203 L300 213 L313 227 L326 240 L340 242 L354 253 L367 247 L380 235" fill="none" stroke="#dbe3ec" stroke-width="2.5" stroke-linejoin="round"/><path d="M380 235 L394 219 L408 202 L421 190 L434 185 L448 188 L462 197 L475 211 L488 225 L502 234 L516 237 L529 232 L542 220" fill="none" stroke="#3ccf8e" stroke-width="2.5" stroke-dasharray="7 5" stroke-linejoin="round"/><g font-family="Consolas, Menlo, monospace" font-size="10.5" fill="#7d8997"><text x="70" y="362">10 YEARS OF HISTORY (SHOWN SHORTENED)</text><text x="388" y="362">FORECAST</text></g>
+  </g>
+</svg>

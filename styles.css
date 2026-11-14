@@ -560,3 +560,10 @@ ul, ol { margin: 0; padding: 0; }
   :root { --ink: #000; --ink-2: #222; --muted: #444; --subtle: #666; --surface: #fff; --surface-2: #fff; --bg: #fff; --bg-soft: #fff; --line: #ccc; --line-strong: #bbb; }
   body { background: #fff; color: #000; }
 }
+
+/* Case study pages: sub-steps inside a section, and the headline outcome */
+.cs-step h3.cs-sub { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin: 1.75rem 0 .2rem; }
+.cs-step h3.cs-sub + p { margin-top: .35rem; }
+.cs-step h3.cs-sub + ul.list { margin-top: .6rem; }
+.cs-step .cs-outcome { max-width: 42rem; font-size: 1.1rem; line-height: 1.55; color: var(--ink); margin-bottom: 1rem; }
+.cs-step .cs-outcome b { font-weight: 600; }

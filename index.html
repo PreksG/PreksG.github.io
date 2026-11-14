@@ -42,14 +42,14 @@
       { "@type": "CollegeOrUniversity", "name": "Ajayi Crowther University" },
       { "@type": "CollegeOrUniversity", "name": "National Open University of Nigeria" }
     ],
-    "knowsAbout": ["Data engineering", "PySpark", "Microsoft Fabric", "Databricks", "Delta Lake", "Power BI", "DAX", "SQL", "Python", "Data quality and reconciliation", "Financial planning and analysis"],
+    "knowsAbout": ["Data engineering", "PySpark", "Microsoft Fabric", "Databricks", "Delta Lake", "Power BI", "DAX", "SQL", "Python", "Data quality and reconciliation", "Azure Data Factory", "Machine learning", "Financial planning and analysis"],
     "sameAs": ["https://www.linkedin.com/in/prekeme-pre-gee-b-sc-fmva%C2%AE-cpmp-mba-26150796/", "https://github.com/PreksG"]
   }
   </script>
   <link rel="preload" as="image" type="image/webp" href="assets/img/headshot-560.webp" imagesrcset="assets/img/headshot-360.webp 360w, assets/img/headshot-560.webp 560w" imagesizes="(min-width: 60rem) 26rem, 20rem">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -124,7 +124,7 @@
       <div class="wrap">
         <dl class="stats" data-reveal>
           <div><dt>Years in finance and data</dt><dd data-count="12">12</dd></div>
-          <div><dt>Published case studies</dt><dd data-count="5">5</dd></div>
+          <div><dt>Published case studies</dt><dd data-count="13">13</dd></div>
           <div><dt>Cloud platforms in production</dt><dd data-count="2">2</dd></div>
         </dl>
         <div class="context-band" data-reveal>
@@ -172,11 +172,11 @@
         </div>
 
         <div class="filters" role="group" aria-label="Filter case studies" data-reveal>
-          <button type="button" class="filter" aria-pressed="true" data-filter="all">All <span class="count">5</span></button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="engineering">Data engineering <span class="count">2</span></button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="bi">BI and reporting <span class="count">3</span></button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="fpna">FP&amp;A <span class="count">1</span></button>
-          <button type="button" class="filter" aria-pressed="false" data-filter="ai">AI <span class="count">1</span></button>
+          <button type="button" class="filter" aria-pressed="true" data-filter="all">All <span class="count">13</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="engineering">Data engineering <span class="count">6</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="bi">BI and reporting <span class="count">6</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="fpna">FP&amp;A <span class="count">3</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="ai">AI <span class="count">3</span></button>
         </div>
         <p class="sr-only" id="filter-status" aria-live="polite"></p>
 
@@ -193,7 +193,7 @@
                 <div><dt>Problem</dt><dd>Digital policy sales and premium sat in different records, with conflicting dates, channel codes and duplicates.</dd></div>
                 <div><dt>Solution</dt><dd>Led a production pipeline on Fabric and Databricks that turns digital policy sales for Life and General Business into finance-reconciled revenue data.</dd></div>
               </dl>
-              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Delta Lake</li><li>Microsoft Fabric</li><li>Databricks</li></ul>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Delta Lake</li><li>Microsoft Fabric</li><li>Databricks</li><li>Azure Data Factory</li></ul>
               <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> One agreed definition of a sale and of premium, reconciled before anyone uses the numbers.</span></p>
               <div class="card-links">
                 <a href="case-studies/insurance-sales-revenue-pipeline.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
@@ -208,17 +208,57 @@
               <span class="cover-label">Illustration</span>
             </div>
             <div class="card-body">
-              <p class="card-meta"><span class="status status-partial">Partially implemented</span><span>Insurance</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <p class="card-meta"><span class="status status-partial">Partially implemented</span><span>Insurance and asset management</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
               <h3><a href="case-studies/high-value-client-ranking.html">High-Value Client Ranking Pipeline</a></h3>
               <dl class="ps">
-                <div><dt>Problem</dt><dd>The same client appeared as unrelated records across four subsidiaries, and one join multiplied premiums.</dd></div>
-                <div><dt>Solution</dt><dd>Ranked clients across four subsidiaries for executive management, and caught a join that multiplied their premiums many times over.</dd></div>
+                <div><dt>Problem</dt><dd>Each business ranked its own top clients, so leadership couldn't see one client's value across the group, and one join multiplied premiums.</dd></div>
+                <div><dt>Solution</dt><dd>Ranking pipelines for each business, plus a group single view (in build) that keys every client on one identity, with cross-sell gaps and unlinked records flagged.</dd></div>
               </dl>
               <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Databricks</li><li>Microsoft Fabric</li><li>Power BI</li></ul>
-              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> A ranking built on correct client-level figures, with checks that stop inflated premiums reaching executives.</span></p>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> One CEO-level view of the group's top clients, with each client's cross-sell gaps and a list of high-value records that can't be linked yet.</span></p>
               <div class="card-links">
                 <a href="case-studies/high-value-client-ranking.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
                 <a class="ext" href="https://github.com/PreksG/analytics-case-studies/tree/main/bi/high-value-client-ranking" target="_blank" rel="noopener">GitHub<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only">: High-Value Client Ranking Pipeline write-up (opens in a new tab)</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="engineering fpna" data-reveal style="--d:.08s">
+            <div class="cover">
+              <img src="assets/illustrations/gl-crosswalk.svg" alt="Illustration: general and life legacy ledgers are copied to the lake, transactions from the parallel-run month are matched one to one, and each legacy account is mapped to a Dynamics 365 F&amp;O account with a confidence flag." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Insurance finance</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <h3><a href="case-studies/legacy-erp-gl-crosswalk.html">Legacy-to-ERP GL Crosswalk &amp; Parallel-Run Reconciliation</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Finance moved from a legacy ledger to Dynamics 365 F&amp;O, but the official account-mapping file was incomplete.</dd></div>
+                <div><dt>Solution</dt><dd>Landed full copies of both legacy ledgers, then matched parallel-run transactions 1:1 to build an evidence-based account crosswalk and dimension map.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Microsoft Fabric</li><li>Azure Data Factory</li><li>Dynamics 365 F&amp;O</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> A GL crosswalk proven line by line, plus a dimension map, so the switchover rested on tested evidence rather than the mapping file alone.</span></p>
+              <div class="card-links">
+                <a href="case-studies/legacy-erp-gl-crosswalk.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="bi fpna" data-reveal>
+            <div class="cover">
+              <img src="assets/illustrations/production-vs-budget.svg" alt="Illustration with invented shapes: weekly actual and budget bars on a Friday-to-Thursday calendar, beside a summary of week, month and year-to-date actual against budget by channel." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>General insurance</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <h3><a href="case-studies/weekly-production-vs-budget.html">Weekly &amp; YTD Production vs Budget Pipeline</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Weekly retail production against budget was compiled by hand, from a monthly budget that didn&#x27;t match the Friday-to-Thursday week.</dd></div>
+                <div><dt>Solution</dt><dd>A 10-step PySpark pipeline that prorates the budget onto the reporting calendar and compares it with week, month and year-to-date actuals.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Delta Lake</li><li>Microsoft Fabric</li><li>Power BI</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> Week, month and YTD actual vs budget by channel, with data-freshness and validation checks built in.</span></p>
+              <div class="card-links">
+                <a href="case-studies/weekly-production-vs-budget.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
               </div>
             </div>
           </article>
@@ -285,6 +325,125 @@
               </div>
             </div>
           </article>
+
+          <article class="card" data-tags="ai" data-reveal>
+            <div class="cover">
+              <img src="assets/illustrations/customer-segmentation.svg" alt="Illustration with invented points: customers plotted in four colour-coded clusters, beside a small chart used to choose the number of clusters." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-partial">Partially implemented</span><span>Insurance</span><span class="sep" aria-hidden="true"></span><span>2025–2026</span></p>
+              <h3><a href="case-studies/customer-segmentation-kmeans.html">Customer Segmentation (K-Means)</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Marketing had no defined customer segments, and demographic fields were inconsistent across the core systems.</dd></div>
+                <div><dt>Solution</dt><dd>Built a clean demographic feature set and clustered customers with K-Means, choosing k by silhouette score and an elbow check.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark MLlib</li><li>Databricks</li><li>Microsoft Fabric</li><li>Plotly</li></ul>
+              <div class="card-links">
+                <a href="case-studies/customer-segmentation-kmeans.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="ai" data-reveal style="--d:.08s">
+            <div class="cover">
+              <img src="assets/illustrations/motor-claims-forecast.svg" alt="Illustration with an invented line: monthly motor claims history with a seasonal pattern, continued by a dashed forecast line." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-progress">Prototype</span><span>General insurance</span><span class="sep" aria-hidden="true"></span><span>2025–2026</span></p>
+              <h3><a href="case-studies/motor-claims-forecasting.html">Motor Claims Forecasting</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Motor claims were planned from prior-year totals, with no forward monthly view.</dd></div>
+                <div><dt>Solution</dt><dd>Fitted a Prophet model with yearly seasonality to ten years of monthly claims, with lag features and trend views by product.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Prophet</li><li>Plotly</li><li>Databricks</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> A seasonal monthly forecast of motor claims.</span></p>
+              <div class="card-links">
+                <a href="case-studies/motor-claims-forecasting.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="engineering bi" data-reveal>
+            <div class="cover">
+              <img src="assets/illustrations/onboarding-feeds.svg" alt="Illustration: general and life policy-admin systems each feed a list of new customers into the Gold layer, which supplies the customer-experience dashboard." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Insurance</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <h3><a href="case-studies/customer-onboarding-feeds.html">Customer Onboarding Feeds for CX</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>The CX team needed a reliable list of new general and life customers, but the data sat in two separate policy-admin systems.</dd></div>
+                <div><dt>Solution</dt><dd>Two PySpark feeds, one per business, write new customers and their policies to the Gold layer for the CX Power BI dashboard.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Microsoft Fabric</li><li>Power BI</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> Automated onboarding feeds behind the published CX dashboard, replacing manual extracts.</span></p>
+              <div class="card-links">
+                <a href="case-studies/customer-onboarding-feeds.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="bi" data-reveal style="--d:.08s">
+            <div class="cover">
+              <img src="assets/illustrations/cross-sell-ecosystem.svg" alt="Illustration: one customer at the centre linked to the group&#x27;s products, with held products shown as solid links and cross-sell gaps as dashed links." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-recurring">Recurring, 2025–2026</span><span>Insurance and financial services</span></p>
+              <h3><a href="case-studies/cross-sell-ecosystem-analytics.html">Cross-Sell &amp; Customer Ecosystem Analytics</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Sales, partnerships, audit and leadership kept asking who holds what across the group, and who to approach next.</dd></div>
+                <div><dt>Solution</dt><dd>A reusable PySpark query pattern on the unified customer Gold layer that classifies clients and produces cross-sell and partnership lists.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>PySpark</li><li>Microsoft Fabric</li><li>Databricks</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> Campaign, partnership and audit lists turned around from one consistent customer model rather than one-off extracts.</span></p>
+              <div class="card-links">
+                <a href="case-studies/cross-sell-ecosystem-analytics.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="engineering" data-reveal>
+            <div class="cover">
+              <img src="assets/illustrations/database-replication.svg" alt="Illustration: an on-premises SQL Server database, a lookup that discovers its tables, a loop that copies each table to Parquet in ADLS Gen2, and a load into Microsoft Fabric." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Pensions and annuities</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <h3><a href="case-studies/annuitant-biometrics-replication.html">Annuitant Biometrics Database Replication</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>An on-premises application database sat out of reach of the analytics platform, and its tables kept changing.</dd></div>
+                <div><dt>Solution</dt><dd>A metadata-driven Data Factory pipeline discovers the tables at run time, copies each to ADLS Gen2 as Parquet and loads them into Fabric.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>Azure Data Factory</li><li>SQL Server</li><li>ADLS Gen2</li><li>Microsoft Fabric</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> The annuitant data refreshed on schedule into the lakehouse with no manual table upkeep.</span></p>
+              <div class="card-links">
+                <a href="case-studies/annuitant-biometrics-replication.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-tags="engineering" data-reveal style="--d:.08s">
+            <div class="cover">
+              <img src="assets/illustrations/quote-ingestion.svg" alt="Illustration: five tables from a digital quoting app&#x27;s database are found by a lookup, copied one by one to ADLS Gen2, and promoted to the Silver layer." width="800" height="450" loading="lazy" decoding="async">
+              <span class="cover-label">Illustration</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta"><span class="status status-done">Implemented</span><span>Insurance (digital sales)</span><span class="sep" aria-hidden="true"></span><span>2026</span></p>
+              <h3><a href="case-studies/digital-quote-platform-ingestion.html">Digital Quote Platform Ingestion</a></h3>
+              <dl class="ps">
+                <div><dt>Problem</dt><dd>Quotes from the group&#x27;s digital quoting app sat in its SQL database, so nobody could analyse quote volumes or conversion.</dd></div>
+                <div><dt>Solution</dt><dd>A Data Factory multi-table load copies the five in-scope tables to ADLS Gen2, and Databricks notebooks promote them to Silver.</dd></div>
+              </dl>
+              <ul class="tags" aria-label="Technologies"><li>Azure Data Factory</li><li>SQL Server</li><li>ADLS Gen2</li><li>Databricks</li></ul>
+              <p class="impact"><span class="check" aria-hidden="true"></span><span><strong>Outcome.</strong> Quote data landed and cleaned in Silver, ready for quote-to-policy reporting.</span></p>
+              <div class="card-links">
+                <a href="case-studies/digital-quote-platform-ingestion.html" aria-hidden="true" tabindex="-1">View case study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
         </div>
         <p class="cards-note">Cover images are illustrations drawn for this site. They show the shape of each solution, not screenshots or figures from company systems.</p>
       </div>
@@ -339,43 +498,43 @@
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="6" height="5" rx="1"/><rect x="15" y="4" width="6" height="5" rx="1"/><rect x="9" y="15" width="6" height="5" rx="1"/><path d="M6 9v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9M12 13v2"/></svg></span>
             <h3>Data engineering</h3>
             <p>Layered pipelines from raw to reporting-ready, on Microsoft Fabric and Databricks, with reconciliation built in.</p>
-            <ul class="tags"><li>PySpark</li><li>Delta Lake</li><li>ETL / ELT</li><li>Data modelling</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/insurance-sales-revenue-pipeline.html">Sales-to-revenue pipeline</a>, <a href="case-studies/high-value-client-ranking.html">Client ranking</a></p>
+            <ul class="tags"><li>PySpark</li><li>Delta Lake</li><li>ETL / ELT</li><li>Data modelling</li><li>Metadata-driven ingestion</li></ul>
+            <p class="evidence">Seen in: <a href="case-studies/insurance-sales-revenue-pipeline.html">Sales-to-revenue pipeline</a>, <a href="case-studies/high-value-client-ranking.html">Client ranking</a>, <a href="case-studies/legacy-erp-gl-crosswalk.html">GL crosswalk</a>, <a href="case-studies/annuitant-biometrics-replication.html">Database replication</a></p>
           </article>
           <article class="xp" data-reveal style="--d:.06s">
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5M7.5 12l2-2 1.5 1.5 2.5-3"/></svg></span>
             <h3>Data analytics</h3>
             <p>Investigating figures with SQL and Python, testing joins and grain, and finding causes rather than patching symptoms.</p>
-            <ul class="tags"><li>SQL</li><li>Python</li><li>Data quality</li><li>Reconciliation</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/dashboard-root-cause-analysis.html">Dashboard root-cause analysis</a></p>
+            <ul class="tags"><li>SQL</li><li>Python</li><li>pandas</li><li>Data quality</li><li>Reconciliation</li></ul>
+            <p class="evidence">Seen in: <a href="case-studies/dashboard-root-cause-analysis.html">Dashboard root-cause analysis</a>, <a href="case-studies/cross-sell-ecosystem-analytics.html">Cross-sell analytics</a></p>
           </article>
           <article class="xp" data-reveal style="--d:.12s">
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 16v-4M11 16V8M15 16v-6M19 16v-2"/></svg></span>
             <h3>Business intelligence</h3>
             <p>Power BI models and dashboards that leadership relies on, and root-cause analysis when numbers look wrong.</p>
             <ul class="tags"><li>Power BI</li><li>DAX</li><li>Power Query</li><li>Tableau</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/dashboard-root-cause-analysis.html">Root-cause analysis</a>, <a href="case-studies/insurance-budgeting-forecasting.html">Executive dashboard</a></p>
+            <p class="evidence">Seen in: <a href="case-studies/dashboard-root-cause-analysis.html">Root-cause analysis</a>, <a href="case-studies/insurance-budgeting-forecasting.html">Executive dashboard</a>, <a href="case-studies/weekly-production-vs-budget.html">Production vs budget</a>, <a href="case-studies/customer-onboarding-feeds.html">CX onboarding feeds</a></p>
           </article>
           <article class="xp" data-reveal>
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 15l4-4 3 3 5-6"/><path d="M15 8h3v3"/></svg></span>
             <h3>Financial planning &amp; analysis</h3>
             <p>Budgeting, forecasting, variance analysis and Board reporting, from eight years in finance operations and three leading FP&amp;A.</p>
-            <ul class="tags"><li>Excel</li><li>Prophix</li><li>Financial modelling</li><li>Performance management</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/insurance-budgeting-forecasting.html">Budgeting and Board reporting</a></p>
+            <ul class="tags"><li>Excel</li><li>Prophix</li><li>Dynamics 365 F&amp;O</li><li>Financial modelling</li><li>Performance management</li></ul>
+            <p class="evidence">Seen in: <a href="case-studies/insurance-budgeting-forecasting.html">Budgeting and Board reporting</a>, <a href="case-studies/weekly-production-vs-budget.html">Production vs budget</a>, <a href="case-studies/legacy-erp-gl-crosswalk.html">GL crosswalk</a></p>
           </article>
           <article class="xp" data-reveal style="--d:.06s">
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9.5a4.25 4.25 0 0 1-.5 8.5z"/><path d="M10 14h4"/></svg></span>
             <h3>Cloud &amp; data platforms</h3>
-            <p>Production delivery on Microsoft Fabric and Databricks, orchestration in Azure Data Factory, and warehouse investigation in BigQuery.</p>
-            <ul class="tags"><li>Microsoft Fabric</li><li>Databricks</li><li>Azure Data Factory</li><li>BigQuery</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/insurance-sales-revenue-pipeline.html">Sales-to-revenue pipeline</a></p>
+            <p>Production delivery on Microsoft Fabric and Databricks, metadata-driven ingestion in Azure Data Factory, and warehouse investigation in BigQuery.</p>
+            <ul class="tags"><li>Microsoft Fabric</li><li>Databricks</li><li>Azure Data Factory</li><li>ADLS Gen2</li><li>BigQuery</li></ul>
+            <p class="evidence">Seen in: <a href="case-studies/insurance-sales-revenue-pipeline.html">Sales-to-revenue pipeline</a>, <a href="case-studies/annuitant-biometrics-replication.html">Database replication</a>, <a href="case-studies/digital-quote-platform-ingestion.html">Digital quote ingestion</a></p>
           </article>
           <article class="xp" data-reveal style="--d:.12s">
             <span class="xp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18 15l.8 2.2L21 18l-2.2.8L18 21l-.8-2.2L15 18l2.2-.8z"/></svg></span>
             <h3>AI &amp; machine learning <span class="developing">Developing</span></h3>
-            <p>AI assistants on top of semantic models, with the controls that make their output safe to send. Machine learning is next.</p>
-            <ul class="tags"><li>Claude</li><li>Power BI MCP</li><li>Python</li></ul>
-            <p class="evidence">Seen in: <a href="case-studies/ai-weekly-management-report.html">AI weekly management report</a></p>
+            <p>AI assistants on top of semantic models, with the controls that make their output safe to send, plus machine-learning work on customer segmentation and claims forecasting.</p>
+            <ul class="tags"><li>Claude</li><li>Power BI MCP</li><li>Python</li><li>PySpark MLlib</li><li>Prophet</li></ul>
+            <p class="evidence">Seen in: <a href="case-studies/ai-weekly-management-report.html">AI weekly management report</a>, <a href="case-studies/customer-segmentation-kmeans.html">Customer segmentation</a>, <a href="case-studies/motor-claims-forecasting.html">Motor claims forecasting</a></p>
           </article>
         </div>
 
@@ -387,6 +546,7 @@
             <li>Power BI</li><li>DAX</li><li>Power Query</li><li>Excel</li>
             <li>Prophix</li><li>Financial modelling</li><li>Data quality</li><li>Reconciliation</li>
             <li>Tableau</li><li>Data modelling</li><li>ETL / ELT</li><li>Performance management</li>
+            <li>ADLS Gen2</li><li>Dynamics 365 F&amp;O</li><li>PySpark MLlib</li><li>Prophet</li>
           </ul>
         </div>
       </div>
